@@ -39,7 +39,7 @@ Run commands :
     git clone https://github.com/Giwi/Sparkjava-Beers.git
     cd Sparkjava-Beers
 
-Edit **gradle.properties** according to your proxy's user/password
+Edit **gradle.properties** according to your proxy's user/password and uncomment all lines
 
     /path/to/gradle idea
     
