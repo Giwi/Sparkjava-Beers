@@ -34,16 +34,6 @@ Edit or add ~/.gitconfig and add those lines according to your proxy's user/pass
     [url "http://"]
         insteadOf = git://
 
-Run commands : 
-
-    git clone https://github.com/Giwi/Sparkjava-Beers.git
-    cd Sparkjava-Beers
-
-Edit **gradle.properties** according to your proxy's user/password and uncomment all lines
-
-    ./gradlew idea
-    
-Open intelliJ, setup the proxy and JDK8 in settings, choose "Import ...", choose the clone directory, select "Import project from external model", select "Gradle", check "use customizable gradle wrapper", sellect JDK 8.
 
 ## How is the tutorial organized ##
 
