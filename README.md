@@ -41,7 +41,7 @@ Run commands :
 
 Edit **gradle.properties** according to your proxy's user/password and uncomment all lines
 
-    /path/to/gradle idea
+    ./gradlew idea
     
 Open intelliJ, setup the proxy and JDK8 in settings, choose "Import ...", choose the clone directory, select "Import project from external model", select "Gradle", check "use customizable gradle wrapper", sellect JDK 8.
 
