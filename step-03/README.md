@@ -54,11 +54,11 @@ And then, quite manually for now, we create our *BeerList* with a static method:
 
 So now we have a nice Java list of beers. In order to send it to the client in our Spark API, we need to transform it in JSON (REST APIs speak JSON). To do it, we need a JSON library like [GSON](https://code.google.com/p/google-gson/). 
 
-Let's begin by adding the GSON dependency to the `build.gradle` and actualize the dependencies by running `gradle eclipse`:
+Let's begin by adding the GSON dependency to the `build.gradle` and actualize the dependencies
 
 		dependencies {
-		 	compile group: 'com.sparkjava', name: 'spark-core', version: '2.1'
-		 	compile group: 'com.google.code.gson', name: 'gson', version: '2.3.1'
+		 	compile group: 'com.sparkjava', name: 'spark-core', version: '2.3'
+		 	compile group: 'com.google.code.gson', name: 'gson', version: '2.4'
 		}   		
 		
 Now we can use GSON to serialize the beer list into JSON:

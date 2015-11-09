@@ -2,18 +2,22 @@
 
 ## Let's restore beer details 
 
-Right now we haven't got the beers details yet, the JS app looks for the individual JSON files in the beers directory. A quick fix would be to put the JSON files for each beer inside `/static/beers`. Let's begin by doing it...
+Right now we haven't got the beers details yet, the JS app looks for the individual JSON files in 
+the beers directory. A quick fix would be to put the JSON files for each beer inside 
+`/static/beers`. Let's begin by doing it...
 
 ![Beer details without images](../assets/step-06-01.jpg)
 
-Now we have most of the beer details but images are missing. We must modify JSON files to indicate that images are inside `/images` path (the `/static/images/` directory in the project).
+Now we have most of the beer details but images are missing. We must modify JSON files to indicate 
+that images are inside `/images` path (the `/static/images/` directory in the project).
 
 ![Beer details with images](../assets/step-06-02.jpg)
 
 
 ## Let's put the beer details inside the database
 
-To make things cleaner we should get rid of those JSON files and put the information in the database. The simplest way to do is is to modify the `beer` table definition adding all the fields of the beet details.
+To make things cleaner we should get rid of those JSON files and put the information in the database. 
+The simplest way to do is is to modify the `beer` table definition adding all the fields of the beet details.
 
 Let's begin by adding the new properties to the `Beer` class:
 

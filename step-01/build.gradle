@@ -1,4 +1,4 @@
-apply plugin: 'eclipse'
+apply plugin: 'idea'
 apply plugin: 'java'
 
 
