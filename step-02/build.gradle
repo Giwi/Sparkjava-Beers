@@ -7,5 +7,5 @@ repositories {
 }
 
 dependencies {
- 	compile group: 'com.sparkjava', name: 'spark-core', version: '2.3'
+ 	compile group: 'com.sparkjava', name: 'spark-core', version: '2.5.2'
 }

@@ -7,17 +7,17 @@ We add Spark as a dependency for Gradle. To do it we need to define in the `buil
 	}
 
 	dependencies {
-		compile group: 'com.sparkjava', name: 'spark-core', version: '2.3'
+		compile group: 'com.sparkjava', name: 'spark-core', version: '2.5.2'
 	}
 
 Then we can create a new class called `HelloWorld`  and add the following code to it:
 
 	package org.lostinbrittany.sparkjava.test;
-	
+
 	import static spark.Spark.*;
-	
+
 	public class HelloWorld {
-		
+
 	    public static void main(String[] args) {
 	        get("/", new Route() {
 	            @Override
@@ -27,7 +27,7 @@ Then we can create a new class called `HelloWorld`  and add the following code t
 	        });
 	    }
 	}
-	
+
 This code:
 
 * Imports the required classes from the Spark library.
@@ -36,17 +36,15 @@ This code:
 
 To see the application in action, run the main program using your IDE. The application will start the embedded Jetty server at http://0.0.0.0:4567. When you open this link in your web browser, you will see *“Hello World!!”*.
 
-Take advantage of Java 8 lambda expressions to make your code more concise and clean. Spark is a modern Java web framework that takes advantage of Java 8 features.	
+Take advantage of Java 8 lambda expressions to make your code more concise and clean. Spark is a modern Java web framework that takes advantage of Java 8 features.
 
 	package org.lostinbrittany.sparkjava.test;
-	
+
 	import static spark.Spark.*;
-	
+
 	public class HelloWorld {
-		
+
 	    public static void main(String[] args) {
 	        get("/", (request, response) -> "Hello World");
 	    }
 	}
-
-
