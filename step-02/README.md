@@ -34,7 +34,7 @@ This code:
 * Creates a new class called `HelloWorld` and defines a main method.
 * Defines a route that tells Spark that when an HTTP GET request is made to *‘/’*, return *“Hello World”*. You use Spark’s `get()` method to define the mapping from the URL to the callback.
 
-To see the application in action, run the main program using your IDE. The application will start the embedded Jetty server at http://0.0.0.0:4567. When you open this link in your web browser, you will see *“Hello World!!”*.
+To see the application in action, run the main program using your IDE. The application will start the embedded Jetty server at http://localhost:4567. When you open this link in your web browser, you will see *“Hello World!!”*.
 
 Take advantage of Java 8 lambda expressions to make your code more concise and clean. Spark is a modern Java web framework that takes advantage of Java 8 features.
 
